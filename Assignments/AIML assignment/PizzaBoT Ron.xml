@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <aiml>
+   <category>
+       <pattern>* I AM *</pattern>
+       <template>
+           Hello <star index="2"/>! 
+           <think><set name="username"><star index="2"/></set></think>
+           WELCOME TO PIZZA HUT!!
+            I am Ron the bot.
+            Please tell me how can i assist you today by choosing one of the options below:
+            (Just type the corresponding alphabets.)
+            [A.] Information regarding your current order.
+            [B.] View Latest Offers.
+            [C.] Place an order.
+            [D.] Other queries or Feedback.
+       </template>
+   </category>
+  
+   <category>
+       <pattern>* MYSELF *</pattern>
+       <template>
+           Hello <star index="2"/>! 
+           <think><set name="username"><star index="2"/></set></think>
+           WELCOME TO PIZZA HUT!!
+            I am Ron the bot.
+            Please tell me how can i assist you today by choosing one of the options below:
+            (Just type the corresponding alphabets.)
+            [A.] Information regarding your current order.
+            [B.] View Latest Offers.
+            [C.] Place an order.
+            [D.] Other queries or Feedback.
+       </template>
+   </category>
+   <category>
+       <pattern>BYE</pattern>
+       <template>Good bye, <get name="username"/>! Thanks for the conversation.</template>
+   </category>
+   <category>
+       <pattern>_ BYE</pattern>
+       <template><srai>BYE</srai></template>
+   </category>
+   <category>
+       <pattern>_ BYE</pattern>
+       <template><srai>BYE</srai></template>
+   </category>
+   <category>
+       <pattern>BYE *</pattern>
+       <template><srai>BYE</srai></template>
+   </category>
+   <category>
+       <pattern>_ BYE *</pattern>
+       <template><srai>BYE</srai></template>
+   </category>
+    <category>
+        <pattern>HELLO </pattern>
+        <template>
+            WELCOME TO PIZZA HUT!!
+            I am Ron the bot.
+            Please tell me how can i assist you today by choosing one of the options below:
+            (Just type the corresponding alphabets.)
+            [A.] Information regarding your current order.
+            [B.] View Latest Offers.
+            [C.] Place an order.
+            [D.] Other queries or Feedback.
+        </template>
+    </category>
+    <category>
+        <pattern>MAIN MENU</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>HI</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+
+   <category>
+        <pattern>HEY</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI BOT</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY BOT</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+
+   <category>
+        <pattern>HELLO BOT</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+    <category>
+       <pattern>* MY NAME IS *</pattern>
+       <template>
+           Hello <star index="2"/>! 
+           <think><set name="username"><star index="2"/></set></think>
+            WELCOME TO PIZZA HUT!!
+            I am Ron the bot.
+            Please tell me how can i assist you today by choosing one of the options below:
+            (Just type the corresponding alphabets.)
+            [A.] Information regarding your current order.
+            [B.] View Latest Offers.
+            [C.] Place an order.
+            [D.] Other queries or Feedback.
+       </template>
+   </category>
+   <category>
+       <pattern>A</pattern>
+       <template>So you want to know the information regarding your current order.Well, i can do two things for you: 
+       (A1.) If you wanna track your order
+       (A2.) Cancel the order</template>
+    </category>
+    <category>
+        <pattern>A1</pattern>
+        <template>Please enter your 6 digit order reference number starting from  "ORDER- "  </template>
+    </category>
+    <category>
+        <pattern>ORDER *</pattern>
+        <template>
+            <random>
+            <li>Yeah ,i have tracked your order succcessfully ,its just about a mile far from destination.
+        We appreciate your patience and regret for delay.Type "main menu" to return to the main menu</li>
+        <li>Yeah ,i have tracked your order succcessfully ,its just about two mile far from destination.
+        We appreciate your patience and regret for delay.Type "main menu" to return to the main menu</li>
+        <li>Yeah ,i have tracked your order succcessfully ,its just about five mile far from destination.
+        We appreciate your patience and regret for delay.Type "main menu" to return to the main menu</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>A2</pattern>
+        <template>Okay, if your final decision is to cancel the order, type "cancel" again for confirmation .
+        Else type "Main menu" to return to main menu.</template>
+    </category>
+    <category>
+        <pattern>CANCEL</pattern>
+        <template>Okay , So i have cancelled your order successfully and you will soon receive a sms 
+        regarding the same .Type 'main menu' to return to the main menu</template>
+    </category>
+    <category>
+        <pattern>B</pattern>
+        <template>
+            Do you know pizza hut provides plenty offers to their customers ? Well, i have found atleast 5
+            latest offers just for you.
+            (B1.) Pizza hut BOGO offer buy 1 pizza and  get 1 free just Rs.529.
+            (B2.) Triple Treat Box meal starting at just Rs.449.
+            (B3.) Pizza hut medium pan pizzas starting at just Rs.199 each.
+            (B4.) Magic pan box of 4 Veg at just Rs.985. 
+            (B5.) Pizza hut sides deal at just Rs.99.
+            For details just type the index of the order you wanna know more about.
+        </template>
+    </category>
+   <category>
+       <pattern>B1</pattern>
+       <template>Buy 1 pizza and get 1 free.Buy 1 medium pizza from selected range and get another
+       of same or lesser value free.No need to apply any coupon code.Type 'B' to go back to offers or 
+       else type 'Main menu' to go to main menu.
+       </template>
+   </category>
+   <category>
+       <pattern>B2</pattern>
+       <template>
+           Get 1 medium pan pizza ,1 Garlic bread stix and 1 potato poppers.No need to apply any coupon code.
+           .Type 'B' to go back to offers or else type 'Main menu' to go to main menu.
+       </template>
+   </category>
+   <category>
+       <pattern>B3</pattern>
+       <template>
+           Pizza hut medium pan pizza starting at just Rs.199 each.No need to apply any coupon code.Pick 
+           Margherita pizza at Rs199.Type 'B' to go back to offers or else type 'Main menu' to go to main menu.
+       </template>
+   </category>
+   <category>
+       <pattern>B4</pattern>
+       <template>
+           This offer contains onion , corn , paneer and capsicum.Chola and onion.No pizzahut coupon code 
+           required.Furthermore, delivery is also FREE.
+           Type 'B' to go back to offers or else type 'Main menu' to go to main menu.
+       </template>
+   </category>
+   <category>
+       <pattern>B5</pattern>
+       <template>
+           You can buy cheese garlic bread at just Rs.129,Garlic bread spicy supreme at Rs.149.Garlic bread 
+           stix at Rs.99 and Spanish Tomato veg pasta at just Rs.149.
+           Type 'B' to go back to offers or else type 'Main menu' to go to main menu.
+       </template>
+   </category>
+    <category>
+        <pattern>C</pattern>
+        <template>Well ,to place an order you need to do just two steps, first type 3 digit code for your choice
+        as "PZ- "  </template>
+    </category>
+    <category>
+        <pattern>PZ *</pattern>
+        <template>Now type "Place" to confirm or else type "main menu" to return to the main menu</template>
+    </category>
+    <category>
+        <pattern>PLACE</pattern>
+        <template>Congo! Your order is placed Successfully. Type "main menu" to return to the main menu</template>
+    </category>
+    <category>
+        <pattern>D</pattern>
+        <template>Okay so if you have any query or wanna give us feedback regarding our service or quality of 
+        pizzas. In either case , just feel free to write to us in customer section on our website "www.pizzaHut.in". 
+        Type "main menu" to return to the main menu</template>
+    </category>
+</aiml>
